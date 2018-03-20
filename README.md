@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid Starter</h1>
 <p align="center">
-    A simple <a href="https://smacss.com/">SMACSS</a> style guide with <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a> written in <a href="https://sass-lang.com/">Sass</a>
+    An HTML5 starter for Sassy Grid
 </p>
 
 ## Quick start
