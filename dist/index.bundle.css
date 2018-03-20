@@ -43,13 +43,13 @@ sup {
   font-size: 60%;
   vertical-align: top; }
 
-.site, .site__header, .site__body, .site__footer, .play-button, .section, .block, .two-column, .two-column .two-column__1, .two-column .two-column__2, .two-column--no-mobile-gap, .two-column--tablet-stacked, .two-column--list, .three-column, .three-column .three-column__1, .three-column .three-column__2, .three-column .three-column__3, .four-column, .four-column .four-column__1, .four-column .four-column__2, .four-column .four-column__3, .four-column .four-column__4, .icon, .hero {
+.site, .site__header, .site__body, .site__footer, .section, .block, .play-button, .two-column, .two-column .two-column__1, .two-column .two-column__2, .two-column--no-mobile-gap, .two-column--tablet-stacked, .two-column--list, .three-column, .three-column .three-column__1, .three-column .three-column__2, .three-column .three-column__3, .four-column, .four-column .four-column__1, .four-column .four-column__2, .four-column .four-column__3, .four-column .four-column__4, .icon, .hero {
   display: grid; }
 
 .site, .site__header, .site__body, .site__footer, .section, .block, .two-column .two-column__1, .two-column .two-column__2, .three-column .three-column__1, .three-column .three-column__2, .three-column .three-column__3, .four-column .four-column__1, .four-column .four-column__2, .four-column .four-column__3, .four-column .four-column__4, .icon {
   grid-template-columns: auto; }
 
-.site__header, .site__body, .site__footer, .play-button, .section, .block, .two-column, .two-column .two-column__1, .two-column .two-column__2, .three-column, .three-column .three-column__1, .three-column .three-column__2, .three-column .three-column__3, .four-column, .four-column .four-column__1, .four-column .four-column__2, .four-column .four-column__3, .four-column .four-column__4, .icon {
+.site__header, .site__body, .site__footer, .section, .block, .play-button, .two-column, .two-column .two-column__1, .two-column .two-column__2, .three-column, .three-column .three-column__1, .three-column .three-column__2, .three-column .three-column__3, .four-column, .four-column .four-column__1, .four-column .four-column__2, .four-column .four-column__3, .four-column .four-column__4, .icon {
   grid-template-rows: auto; }
 
 /* Custom Colors */
@@ -182,6 +182,150 @@ sup {
 .site__header {
   grid-template-columns: minmax(auto, 1080px);
   justify-self: center; }
+
+@media only screen and (min-width: 850px) {
+  .section {
+    padding: 3rem 1rem; } }
+
+@media only screen and (min-width: 540px) and (max-width: 850px) {
+  .section {
+    padding: 2rem 1.5rem; } }
+
+@media only screen and (max-width: 540px) {
+  .section {
+    padding: 2rem 1rem; } }
+
+.section--clear {
+  padding: 0; }
+
+@media only screen and (min-width: 850px) {
+  .section--small {
+    padding: 2rem 1rem; } }
+
+@media only screen and (min-width: 540px) and (max-width: 850px) {
+  .section--small {
+    padding: 2rem 1.5rem; } }
+
+@media only screen and (max-width: 540px) {
+  .section--small {
+    padding: 2rem 1rem; } }
+
+@media only screen and (min-width: 850px) {
+  .section--large {
+    padding: 5rem 1rem; } }
+
+@media only screen and (min-width: 540px) and (max-width: 850px) {
+  .section--large {
+    padding: 4rem 1.5rem; } }
+
+@media only screen and (max-width: 540px) {
+  .section--large {
+    padding: 4rem 1rem; } }
+
+.section--turquoise {
+  background-color: #31A2AC; }
+
+.section--orange {
+  background-color: #F49800; }
+
+.section--grayish-white {
+  background-color: #F0EFF0; }
+
+.section--disease {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png"); }
+  @media only screen and (min-width: 850px) {
+    .section--disease {
+      padding: 3rem 1rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 850px) {
+    .section--disease {
+      padding: 2rem 1.5rem; } }
+  @media only screen and (max-width: 540px) {
+    .section--disease {
+      padding: 2rem 1rem; } }
+
+.section--cta {
+  background-color: #31A2AC; }
+  @media only screen and (min-width: 850px) {
+    .section--cta {
+      padding: 6rem 1rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 850px) {
+    .section--cta {
+      padding: 4rem 1.5rem; } }
+  @media only screen and (max-width: 540px) {
+    .section--cta {
+      padding: 4rem 1rem; } }
+
+.section--thomas {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/hcp/interior-2-2/desktop/thomas-hero-desktop.png"); }
+  @media only screen and (min-width: 850px) {
+    .section--thomas {
+      padding: 5rem 1rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 850px) {
+    .section--thomas {
+      padding: 4rem 1.5rem; } }
+  @media only screen and (max-width: 540px) {
+    .section--thomas {
+      padding: 4rem 1rem; } }
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container--small {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; }
+
+.block {
+  padding: 0 0 1rem; }
+  .block .block__title, .block .block__body, .block .block__image {
+    padding: 0 0 0.5rem; }
+
+/*
+ Size Modifiers
+*/
+.block--clear {
+  padding: 0; }
+
+.block--xsmall {
+  padding: 0 0 0.25rem; }
+
+.block--small {
+  padding: 0 0 0.5rem; }
+
+.block--large {
+  padding: 0 0 1.5rem; }
+
+.block--xlarge {
+  padding: 0 0 2.5rem; }
+
+/*
+ Custom Modifiers
+*/
+.block--hero {
+  padding: 0; }
+  .block--hero .block__title {
+    padding: 0;
+    color: #ffffff;
+    text-align: center; }
+
+.block--reference {
+  padding: 0; }
+  .block--reference .block__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #969696; }
+  .block--reference .block__body {
+    padding: 0;
+    font-size: 14px;
+    color: #333333; }
 
 .site__footer {
   grid-template-columns: minmax(auto, 1080px);
@@ -349,150 +493,6 @@ h4 {
     grid-row-start: 1;
     justify-self: center;
     align-self: center; }
-
-@media only screen and (min-width: 850px) {
-  .section {
-    padding: 3rem 1rem; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .section {
-    padding: 2rem 1.5rem; } }
-
-@media only screen and (max-width: 540px) {
-  .section {
-    padding: 2rem 1rem; } }
-
-.section--clear {
-  padding: 0; }
-
-@media only screen and (min-width: 850px) {
-  .section--small {
-    padding: 2rem 1rem; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .section--small {
-    padding: 2rem 1.5rem; } }
-
-@media only screen and (max-width: 540px) {
-  .section--small {
-    padding: 2rem 1rem; } }
-
-@media only screen and (min-width: 850px) {
-  .section--large {
-    padding: 5rem 1rem; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .section--large {
-    padding: 4rem 1.5rem; } }
-
-@media only screen and (max-width: 540px) {
-  .section--large {
-    padding: 4rem 1rem; } }
-
-.section--turquoise {
-  background-color: #31A2AC; }
-
-.section--orange {
-  background-color: #F49800; }
-
-.section--grayish-white {
-  background-color: #F0EFF0; }
-
-.section--disease {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png"); }
-  @media only screen and (min-width: 850px) {
-    .section--disease {
-      padding: 3rem 1rem; } }
-  @media only screen and (min-width: 540px) and (max-width: 850px) {
-    .section--disease {
-      padding: 2rem 1.5rem; } }
-  @media only screen and (max-width: 540px) {
-    .section--disease {
-      padding: 2rem 1rem; } }
-
-.section--cta {
-  background-color: #31A2AC; }
-  @media only screen and (min-width: 850px) {
-    .section--cta {
-      padding: 6rem 1rem; } }
-  @media only screen and (min-width: 540px) and (max-width: 850px) {
-    .section--cta {
-      padding: 4rem 1.5rem; } }
-  @media only screen and (max-width: 540px) {
-    .section--cta {
-      padding: 4rem 1rem; } }
-
-.section--thomas {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("/assets/images/hcp/interior-2-2/desktop/thomas-hero-desktop.png"); }
-  @media only screen and (min-width: 850px) {
-    .section--thomas {
-      padding: 5rem 1rem; } }
-  @media only screen and (min-width: 540px) and (max-width: 850px) {
-    .section--thomas {
-      padding: 4rem 1.5rem; } }
-  @media only screen and (max-width: 540px) {
-    .section--thomas {
-      padding: 4rem 1rem; } }
-
-.container {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto; }
-
-.container--small {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto; }
-
-.block {
-  padding: 0 0 1rem; }
-  .block .block__title, .block .block__body, .block .block__image {
-    padding: 0 0 0.5rem; }
-
-/*
- Size Modifiers
-*/
-.block--clear {
-  padding: 0; }
-
-.block--xsmall {
-  padding: 0 0 0.25rem; }
-
-.block--small {
-  padding: 0 0 0.5rem; }
-
-.block--large {
-  padding: 0 0 1.5rem; }
-
-.block--xlarge {
-  padding: 0 0 2.5rem; }
-
-/*
- Custom Modifiers
-*/
-.block--hero {
-  padding: 0; }
-  .block--hero .block__title {
-    padding: 0;
-    color: #ffffff;
-    text-align: center; }
-
-.block--reference {
-  padding: 0; }
-  .block--reference .block__title {
-    font-size: 14px;
-    font-weight: 700;
-    color: #969696; }
-  .block--reference .block__body {
-    padding: 0;
-    font-size: 14px;
-    color: #333333; }
 
 @media only screen and (min-width: 850px) {
   .two-column {

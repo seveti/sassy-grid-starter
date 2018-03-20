@@ -4,37 +4,28 @@
 </p>
 
 ## Quick start
-* Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Install the Grunt CLI: `npm install -g grunt-cli`
+* Clone the repo: `git clone https://github.com/seveti/sassy-grid-starter.git`
 * Install Node.js dependencies: `npm install`
+* Install the Grunt CLI: `npm install -g grunt-cli`
 * Run the app: `grunt`
 
 ## What's included
 Within the download you'll find the following directories and files. You'll see something like this:
 ```
-styles/
-├── base/
-│   ├── _reset.scss
-│   ├── _responsive.scss
-│   └── _grid.scss
-│   ├── _mixins.scss
-│   ├── _base.scss
-│   └── _helper.scss
-└── layout/
-│   ├── _site.scss
-│   ├── _header.scss
-│   ├── _body.scss
-│   └── _footer.scss
-├── module/
-│   ├── element/
-│   │   ├── _typography.scss
-│   │   ├── _link.scss
-│   │   └── _button.scss
-│   └── component/
-│       ├── _section.scss
-│       └── _block.scss
-└── theme/
-    └── _custom.scss
+sassy-grid-starter/
+├── src/
+│   ├── app.js
+│   ├── main.scss
+│   └── styles/
+│       ├── base/
+│       ├── layout/
+│       ├── module/
+│       └── theme/
+└── dist/
+    ├── index.html
+    ├── index.bundle.js
+    ├── index.bundle.css
+    └── index.bundle.css.map
 ```
 
 ## Browser support
