@@ -1,24 +1,18 @@
-// Default mixin
-@mixin block {
+/* Block */
+.block {
     @include grid;
     padding: 0 0 $size-6;
 
-    .block__title, .block__body, .block__image {
+    .block__title, .block__content, .block__image {
         padding: 0 0 $size-8;
     }
 }
 
-// Block
-.block {
-    @include block;
-}
-
-
 /*
- Size Modifiers
-*/
+/* Modifiers */
+///////////////
 
-// None block
+// Clear block
 .block--clear {
     padding: 0;
 }
@@ -43,11 +37,6 @@
     padding: 0 0 $size-2;
 }
 
-
-/*
- Custom Modifiers
-*/
-
 // Hero block
 .block--hero {
     padding: 0;
@@ -59,7 +48,7 @@
     }
 }
 
-// Reference
+// Reference block
 .block--reference {
     padding: 0;
     

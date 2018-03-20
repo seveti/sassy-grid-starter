@@ -1,7 +1,8 @@
-@mixin icon {
+/* Icon */
+.icon {
     @include grid;
 
-    &__img {
+    .icon__img {
         @include grid-start(1);
         @include justify(center);
         width: 225px;
@@ -9,15 +10,11 @@
         padding: 0 0 $size-8;
     }
 
-    &__body {
+    .icon__body {
         @include grid-start(1, 2);
         @include justify(center);
         width: 250px;
         text-align: center;
     }
 
-}
-
-.icon {
-    @include icon;
 }

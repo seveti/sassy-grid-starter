@@ -1,4 +1,6 @@
-@mixin hero-three-block {
+/*** hero-three-block ***/
+
+.hero-three-block {
     @include desktop-up {
         @include grid(2fr 1rem 1fr, auto 1rem auto);
         padding: $size-6 0 0;
@@ -9,24 +11,6 @@
     }
     @include mobile-only {
         @include grid(1fr, auto 1rem auto 1rem auto 1rem);
-    }
-
-    .block__title {
-        margin-bottom: .5rem;
-    }
-
-    .block__content {
-        padding: 0 0 $size-6;
-        
-        line-height: 1.1;
-        @include desktop-up {
-            max-width: 80%;
-            font-size: 20px;
-        }
-
-        @include tablet-down {
-            font-size: 16px;
-        }
     }
 
     .block__image {
@@ -47,27 +31,26 @@
         }
     }
 
-    .block__subtitle {
-        font-size: 14px;
-        line-height: 1.2;
-
-        @include desktop-up {
-            max-width: 120px;
-        }
-
-        @include tablet-only {
-            max-width: 200px;
-        }
-        @include mobile-only {
-            padding: .5em;
-            max-width: 230px;
-            margin: 0px auto;
-            text-align: center;
+    .block__left__top {
+        *:nth-child(2) {
+            padding: 0 0 $size-6;
+            
+            line-height: 1.1;
+            @include desktop-up {
+                max-width: 80%;
+                font-size: 20px;
+            }
+    
+            @include tablet-down {
+                font-size: 16px;
+            }
         }
     }
 
-
     .block__left__top, .block__rt__top, .block__rb__top {
+        padding: $size-6;
+        align-self: start;
+
         @include desktop-up {
             @include grid-start(1);
         }
@@ -80,11 +63,15 @@
             text-align: center;
         }
 
-        padding: $size-6;
-        align-self: start;
+        *:nth-child(1) {
+            margin-bottom: .5rem;
+        }
     }
     
     .block__left__bottom, .block__rt__bottom, .block__rb__bottom {
+        width: 100%;
+        @include align(end);
+
         @include desktop-up {
             @include grid-start(1, 2);
         }
@@ -99,8 +86,25 @@
             background-color: $color-grey;
             color: $color-white;
         }
-        width: 100%;
-        @include align(end);
+
+        *:nth-child(1) {
+            font-size: 14px;
+            line-height: 1.2;
+
+            @include desktop-up {
+                max-width: 120px;
+            }
+
+            @include tablet-only {
+                max-width: 200px;
+            }
+            @include mobile-only {
+                padding: .5em;
+                max-width: 230px;
+                margin: 0px auto;
+                text-align: center;
+            }
+        }
 
     }
 
@@ -142,135 +146,128 @@
 }
 
 
-// Default Hero Three Block Class
-.hero-three-block {
-    @include hero-three-block;
-    
+// Patient Homepage
+.hero-three-block--pat-home {
 
-    // -- Patient Homepage
-    &--pat-home {
-        @include hero-three-block;
+    .block__left {
+        background-color: #f3f3f3;
+        @include desktop-up {
+            height: 691px;
+            background-repeat: no-repeat;
+            background-position: bottom right -80px;
+            background-size: cover;
+            background-image: url('/assets/images/patient/home/desktop/pat-hero-1-desktop.png');
+        }
+        @include tablet-only {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;    
+            background-image: url('/assets/images/patient/home/tablet/pat-hero-1-tablet.png');
+        }
+        @include mobile-only {
+            height: 620px;
+            background-repeat: no-repeat;
+            background-position: bottom 45px center;
+            background-size: cover;     
+            background-image: url('/assets/images/patient/home/mobile/pat-hero-1-mobile.png');
+        }
 
-        .block__left {
-            background-color: #f3f3f3;
+        h1 {
             @include desktop-up {
-                height: 691px;
-                background-repeat: no-repeat;
-                background-position: bottom right -80px;
-                background-size: cover;
-                background-image: url('/assets/images/patient/home/desktop/pat-hero-1-desktop.png');
-            }
-            @include tablet-only {
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: cover;    
-                background-image: url('/assets/images/patient/home/tablet/pat-hero-1-tablet.png');
-            }
-            @include mobile-only {
-                height: 620px;
-                background-repeat: no-repeat;
-                background-position: bottom 45px center;
-                background-size: cover;     
-                background-image: url('/assets/images/patient/home/mobile/pat-hero-1-mobile.png');
-            }
-
-            h1 {
-                @include desktop-up {
-                    font-size: 40px;
-                }
+                font-size: 40px;
             }
         }
-    
-        .block__rt {
-            @include desktop-up {
-                height: 325px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;            
-                background-image: url('/assets/images/patient/home/desktop/pat-child-1-desktop.png');
-            }
+    }
+
+    .block__rt {
+        @include desktop-up {
+            height: 325px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;            
+            background-image: url('/assets/images/patient/home/desktop/pat-child-1-desktop.png');
+        }
+        @include tablet-only {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;  
+            background-image: url('/assets/images/patient/home/tablet/pat-child-2-tablet.png');
+        }
+        @include mobile-only {
+            height: 340px;
+            background-repeat: no-repeat;
+            background-position: bottom 25px center;
+            background-size: cover;
+            background-image: url('/assets/images/patient/home/mobile/pat-child-1-mobile.png');
+        }
+
+        .block__rt__top {
             @include tablet-only {
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: cover;  
-                background-image: url('/assets/images/patient/home/tablet/pat-child-2-tablet.png');
-            }
-            @include mobile-only {
-                height: 340px;
-                background-repeat: no-repeat;
-                background-position: bottom 25px center;
-                background-size: cover;
-                background-image: url('/assets/images/patient/home/mobile/pat-child-1-mobile.png');
-            }
-
-            .block__rt__top {
-                @include tablet-only {
-                    padding-left: 2em;
-                    padding-top: 3em;
-                }
-            }
-
-            .block__rt__bottom {
-                @include tablet-only {
-                    padding-left: 2em;
-                }
-            }
-
-            .button {
-                @include desktop-up {
-                    margin: 0;
-                }
+                padding-left: 2em;
+                padding-top: 3em;
             }
         }
-    
-        .block__rb {
+
+        .block__rt__bottom {
+            @include tablet-only {
+                padding-left: 2em;
+            }
+        }
+
+        .button {
             @include desktop-up {
-                height: 350px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url('/assets/images/patient/home/desktop/pat-adult-1-desktop.png');
+                margin: 0;
+            }
+        }
+    }
+
+    .block__rb {
+        @include desktop-up {
+            height: 350px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url('/assets/images/patient/home/desktop/pat-adult-1-desktop.png');
+        }
+        @include tablet-only {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+            background-image: url('/assets/images/patient/home/tablet/pat-adult-3-tablet.png');
+        }
+        @include mobile-only {
+            height: 340px;
+            background-repeat: no-repeat;
+            background-position: bottom 25px center;
+            background-size: cover;
+            background-image: url('/assets/images/patient/home/mobile/pat-adult-1-mobile.png');
+        }
+
+        .block__rb__top {
+            @include tablet-only {
+                padding-left: 2em;
+                padding-top: 3em;
+            }
+        }
+
+        .block__rb__bottom {
+            @include tablet-only {
+                padding-left: 2em;
+            }
+        }
+        
+        .block__subtitle {
+            @include desktop-up {
+                max-width: 110px;
             }
             @include tablet-only {
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: cover;
-                background-image: url('/assets/images/patient/home/tablet/pat-adult-3-tablet.png');
+                max-width: 165px;
             }
-            @include mobile-only {
-                height: 340px;
-                background-repeat: no-repeat;
-                background-position: bottom 25px center;
-                background-size: cover;
-                background-image: url('/assets/images/patient/home/mobile/pat-adult-1-mobile.png');
-            }
+        }
 
-            .block__rb__top {
-                @include tablet-only {
-                    padding-left: 2em;
-                    padding-top: 3em;
-                }
-            }
-
-            .block__rb__bottom {
-                @include tablet-only {
-                    padding-left: 2em;
-                }
-            }
-            
-            .block__subtitle {
-                @include desktop-up {
-                    max-width: 110px;
-                }
-                @include tablet-only {
-                    max-width: 165px;
-                }
-            }
-
-            .button {
-                @include desktop-up {
-                    margin: 0;
-                }
+        .button {
+            @include desktop-up {
+                margin: 0;
             }
         }
     }

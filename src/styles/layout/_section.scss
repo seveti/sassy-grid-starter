@@ -1,5 +1,8 @@
-// Default mixin
-@mixin section {
+/*
+// Section
+*/////////
+
+.section {
     @include grid;
 
     @include desktop-up {
@@ -15,15 +18,14 @@
     }
 }
 
-.section {
-    // Section
-    @include section;
-}
+/*
+// Modifiers
+*///////////
 
+// Clear section
 .section--clear {
     padding: 0;
 }
-
 
 // Small section
 .section--small {
@@ -60,14 +62,17 @@
     background-color: $color-turquoise;
 }
 
+// Orange section
 .section--orange {
     background-color: $color-orange;
 }
 
+// Grayish white section
 .section--grayish-white {
     background-color: $color-grayish-white;
 }
 
+// Disease section
 .section--disease {
     background-repeat: no-repeat;
     background-position: center;
@@ -87,6 +92,7 @@
     }
 }
 
+// CTA section
 .section--cta {
     background-color: $color-turquoise;
 
@@ -103,6 +109,7 @@
     }
 }
 
+// Thomas section
 .section--thomas {
     background-repeat: no-repeat;
     background-position: center;
@@ -122,14 +129,3 @@
     }
 }
 
-.container {
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.container--small {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-}

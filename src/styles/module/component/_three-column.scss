@@ -1,3 +1,4 @@
+/* Three column */
 @mixin three-column {
     @include desktop-up {
         @include grid(1fr 1rem 1fr 1rem 1fr);
