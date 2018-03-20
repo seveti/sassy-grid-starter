@@ -6,7 +6,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -55,6 +54,64 @@ sup {
 /* Custom Colors */
 /* Type */
 /* Breakpoints */
+.align-start {
+  align-self: start; }
+
+.align-center {
+  align-self: center; }
+
+.align-end {
+  align-self: end; }
+
+.justify-start {
+  justify-self: start; }
+
+.justify-center {
+  justify-self: center; }
+
+.justify-end {
+  justify-self: end; }
+
+.border-small {
+  border: 1px solid #ccc; }
+
+.border-medium {
+  border: 3px solid #ccc; }
+
+@media only screen and (min-width: 540px) {
+  .desktop-hide {
+    display: none; } }
+
+@media only screen and (max-width: 540px) {
+  .desktop-hide {
+    display: block; } }
+
+@media only screen and (min-width: 540px) {
+  .mobile-hide {
+    display: block; } }
+
+@media only screen and (max-width: 540px) {
+  .mobile-hide {
+    display: none; } }
+
+.text-center {
+  text-align: center; }
+
+.color-white {
+  color: #ffffff; }
+
+.height-small {
+  height: 150px; }
+
+.max-width-small {
+  max-width: 250px; }
+
+.max-width--medium {
+  max-width: 350px; }
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
 @media only screen and (min-width: 850px) {
   .padding--small {
     padding: 1.5rem 1rem; } }
@@ -117,64 +174,6 @@ sup {
 
 .padding-bottom--xlarge {
   padding-bottom: 2.5rem; }
-
-.align-start {
-  align-self: start; }
-
-.align-center {
-  align-self: center; }
-
-.align-end {
-  align-self: end; }
-
-.justify-start {
-  justify-self: start; }
-
-.justify-center {
-  justify-self: center; }
-
-.justify-end {
-  justify-self: end; }
-
-.border-small {
-  border: 1px solid #ccc; }
-
-.border-medium {
-  border: 3px solid #ccc; }
-
-@media only screen and (min-width: 540px) {
-  .desktop-hide {
-    display: none; } }
-
-@media only screen and (max-width: 540px) {
-  .desktop-hide {
-    display: block; } }
-
-@media only screen and (min-width: 540px) {
-  .mobile-hide {
-    display: block; } }
-
-@media only screen and (max-width: 540px) {
-  .mobile-hide {
-    display: none; } }
-
-.text-center {
-  text-align: center; }
-
-.color-white {
-  color: #ffffff; }
-
-.height-small {
-  height: 150px; }
-
-.max-width-small {
-  max-width: 250px; }
-
-.max-width--medium {
-  max-width: 350px; }
-
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
 
 .site {
   grid-template-rows: repeat(3, auto); }

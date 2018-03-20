@@ -20,6 +20,7 @@ sassy-grid-starter/
 │       ├── base/
 │       ├── layout/
 │       ├── module/
+│       ├── state/
 │       └── theme/
 └── dist/
     ├── index.html
