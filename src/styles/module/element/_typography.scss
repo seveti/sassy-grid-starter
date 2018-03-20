@@ -1,0 +1,98 @@
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-normal;
+  font-weight: $weight-normal;
+}
+
+em, i { 
+  font-style: italic;
+}
+
+strong { 
+  font-weight: $weight-bold;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  color: inherit;
+  clear: both;
+  line-height: 1.1;
+}
+
+h1 {
+  font-weight: $weight-bold;
+  color: $color-h1;
+  text-transform: uppercase;
+
+  @include desktop-up {
+    font-size: 30px;
+  }
+
+  @include tablet-only {
+    font-size: 26px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
+  }
+}
+
+h2 {
+  font-weight: $weight-bold;
+  color: $color-h2;
+  text-transform: uppercase;
+
+  @include desktop-up {
+    font-size: 26px;
+  }
+
+  @include tablet-only {
+    font-size: 26px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-weight: $weight-semibold;
+  color: $color-h3;
+  text-transform: uppercase;
+
+  @include desktop-up {
+    font-size: 20px;
+  }
+
+  @include tablet-only {
+    font-size: 20px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-weight: $weight-semibold;
+  color: $color-h4;
+
+  @include desktop-up {
+    font-size: 20px;
+  }
+
+  @include tablet-only {
+    font-size: 16px;
+  }
+  
+  @include mobile-only {
+    font-size: 16px;
+  }
+}
+
+h5 {
+}
+
+h6 {
+}

@@ -1,0 +1,71 @@
+
+
+// Align vertically
+.align-start { @include align(start); }
+.align-center { @include align(center); }
+.align-end { @include align(end); }
+
+// Justify horizontally
+.justify-start { @include justify(start); }
+.justify-center { @include justify(center); }
+.justify-end { @include justify(end); }
+
+// Border small
+.border-small { 
+    border: 1px solid #ccc;
+}
+
+// Border medium
+.border-medium { 
+    border: 3px solid #ccc;
+}
+
+// Hide on desktop
+.desktop-hide {
+    @include tablet-up {
+        display: none;
+    }
+
+    @include mobile-only {
+        display: block;
+    }
+}
+
+// Hide on mobile
+.mobile-hide {
+    @include tablet-up {
+        display: block;
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+}
+
+// Text align center
+.text-center {
+    text-align: center;
+}
+
+// Color white
+.color-white {
+    color: $color-white;
+}
+
+
+.height-small {
+    height: 150px;
+}
+
+.max-width-small {
+    max-width: 250px;
+}
+
+.max-width--medium {
+    max-width: 350px;
+}
+
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
+}

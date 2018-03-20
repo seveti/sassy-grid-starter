@@ -1,0 +1,31 @@
+%button-static {
+  @include border-radius(20px);
+  padding: 10px 20px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $font-family-primary;
+  font-size: $font-size-normal;
+  font-weight: $weight-normal;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-turquoise;
+  }
+}
+
+// Default Button
+@mixin button {
+  @extend %button-static;
+}
+
+.button {
+  @include button;
+}
+
+.button-primary {
+  @include button;
+  color: $color-white;
+  background-color: $color-turquoise;
+}
