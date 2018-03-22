@@ -10,7 +10,6 @@
 * Run the app: `grunt`
 
 ## What's included
-Within the download you'll find the following directories and files. You'll see something like this:
 ```
 sassy-grid-starter/
 ├── src/
