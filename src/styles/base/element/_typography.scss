@@ -1,13 +1,16 @@
+/* Body */
 body {
   font-family: $font-family-primary;
   font-size: $font-size-normal;
   font-weight: $weight-normal;
 }
 
+/* Italic */
 em, i { 
   font-style: italic;
 }
 
+/* Bold */
 strong { 
   font-weight: $weight-bold;
 }

@@ -49,31 +49,3 @@
         text-align: left;
     }
 }
-
-// Hero block
-.block--hero {
-    padding: 0;
-
-    h1 {
-        padding: 0;
-        color: $color-white;
-        text-align: center;
-    }
-}
-
-// Reference block
-.block--reference {
-    padding: 0;
-    
-    h3 {
-        font-size: 14px;
-        font-weight: $weight-bold;
-        color: #969696;
-    }
-
-    p {
-        padding: 0;
-        font-size: 14px;
-        color: #333333;
-    }
-}

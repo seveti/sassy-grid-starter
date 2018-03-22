@@ -15,18 +15,7 @@
     > *:nth-child(1) {
         @include grid;
         @include align(start);
-
-        @include desktop-up {
-            @include grid-start(1);
-        }
-        
-        @include tablet-only {
-            @include grid-start(1);
-        }
-
-        @include mobile-only {
-            @include grid-start(1);
-        }
+        @include grid-start(1);
     }
 
     > *:nth-child(2) {

@@ -1,3 +1,4 @@
+/* Button placeholder selector */
 %button-static {
   @include border-radius(20px);
   padding: 10px 20px;
@@ -15,17 +16,16 @@
   }
 }
 
-// Default Button
-@mixin button {
+/* Button */
+.button {
   @extend %button-static;
 }
 
-.button {
-  @include button;
-}
 
+/* Modifiers */
+
+// Primary button
 .button--primary {
-  @include button;
   color: $color-white;
   background-color: $color-turquoise;
 

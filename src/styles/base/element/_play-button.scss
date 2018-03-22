@@ -1,7 +1,7 @@
-@mixin play-button {
+.play-button {
     @include grid(1fr);
 
-    &__icon {
+    > *:nth-child(1) {
         z-index: 1;
         opacity: .5;
         @include grid-start(1);
@@ -22,14 +22,10 @@
         }
     }
 
-    &__bg {
+    > *:nth-child(2) {
         @include grid-start(1);
         @include justify(center);
         @include align(center);
     }
 
-}
-
-.play-button {
-    @include play-button;
 }
