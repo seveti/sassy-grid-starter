@@ -1,7 +1,4 @@
-/*
-// Section
-*/////////
-
+/* Section */
 .section {
     @include grid;
 
@@ -18,9 +15,8 @@
     }
 }
 
-/*
-// Modifiers
-*///////////
+
+/* Modifiers */
 
 // Clear section
 .section--clear {

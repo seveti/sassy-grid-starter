@@ -1,38 +1,35 @@
-// Base
+/* Base */
 @import "./styles/base/reset";
 @import "./styles/base/responsive";
 @import "./styles/base/grid";
-@import "./styles/base/mixins";
 @import "./styles/base/base";
 @import "./styles/base/helper";
 
-// Layout
-@import "./styles/layout/site";
+/* Base > Element */
+@import "./styles/base/element/typography";
+@import "./styles/base/element/link";
+@import "./styles/base/element/button";
+@import "./styles/base/element/arrow";
+@import "./styles/base/element/play-button";
+
+/* Layout */
 @import "./styles/layout/header";
 @import "./styles/layout/body";
-@import "./styles/layout/container";
-@import "./styles/layout/section";
-@import "./styles/layout/block";
 @import "./styles/layout/footer";
 
-// Module > Element
-@import "./styles/module/element/typography";
-@import "./styles/module/element/link";
-@import "./styles/module/element/button";
-@import "./styles/module/element/arrow";
-@import "./styles/module/element/play-button";
+/* Module */
+@import "./styles/module/section";
+@import "./styles/module/block";
+@import "./styles/module/two-column";
+@import "./styles/module/three-column";
+@import "./styles/module/four-column";
+@import "./styles/module/tabs";
+@import "./styles/module/icon";
+@import "./styles/module/hero";
+@import "./styles/module/hero-three-block";
 
-// Module > Component
-@import "./styles/module/component/two-column";
-@import "./styles/module/component/three-column";
-@import "./styles/module/component/four-column";
-@import "./styles/module/component/tabs";
-@import "./styles/module/component/icon";
-@import "./styles/module/component/hero";
-@import "./styles/module/component/hero-three-block";
+/* State */
+// Import states here
 
-// State
-@import "./styles/state/custom";
-
-// Theme
-@import "./styles/theme/custom";
+/* Theme */
+// Import themes here

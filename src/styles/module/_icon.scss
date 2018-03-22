@@ -2,7 +2,7 @@
 .icon {
     @include grid;
 
-    .icon__img {
+    > *:nth-child(1) {
         @include grid-start(1);
         @include justify(center);
         width: 225px;
@@ -10,7 +10,7 @@
         padding: 0 0 $size-8;
     }
 
-    .icon__body {
+    > *:nth-child(2) {
         @include grid-start(1, 2);
         @include justify(center);
         width: 250px;
@@ -18,3 +18,6 @@
     }
 
 }
+
+
+/* Modifiers */

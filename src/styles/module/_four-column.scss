@@ -1,7 +1,7 @@
-/* Three column */
-@mixin three-column {
+/* Four column with gap */
+.four-column-gap {
     @include desktop-up {
-        @include grid(1fr 1rem 1fr 1rem 1fr);
+        @include grid(1fr 1rem 1fr 1rem 1fr 1rem 1fr);
     }
 
     @include tablet-only {
@@ -9,10 +9,10 @@
     }
 
     @include mobile-only {
-        @include grid(1fr, auto 1rem auto 1rem auto);
+        @include grid(1fr, auto 1rem auto 1rem auto 1rem auto);
     }
 
-    .three-column__1 {
+    > *:nth-child(1) {
         @include grid;
         @include align(start);
 
@@ -29,10 +29,10 @@
         }
     }
 
-    .three-column__2 {
+    > *:nth-child(2) {
         @include grid;
         @include align(start);
-        
+
         @include desktop-up {
             @include grid-start(3);
         }
@@ -46,7 +46,7 @@
         }
     }
 
-    .three-column__3 {
+    > *:nth-child(3) {
         @include grid;
         @include align(start);
 
@@ -62,8 +62,24 @@
             @include grid-start(1, 5);
         }
     }
+
+    > *:nth-child(4) {
+        @include grid;
+        @include align(start);
+
+        @include desktop-up {
+            @include grid-start(7);
+        }
+        
+        @include tablet-only {
+            @include grid-start(3, 3);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 7);
+        }
+    }
 }
 
-.three-column {
-    @include three-column;
-}
+
+/* Modifiers */

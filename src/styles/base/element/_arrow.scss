@@ -1,4 +1,4 @@
-@mixin arrow {
+.arrow {
     padding-left: 5px;
     height: 25px;
     width: 25px;
@@ -8,12 +8,4 @@
     -o-transition: none;
     transition: none;
     vertical-align: middle;
-}
-
-.arrow {
-    @include arrow;
-
-    &--right {
-
-    }
 }
