@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid Starter</h1>
 <p align="center">
-    An HTML5 starter for Sassy Grid
+    An HTML5 starter for [Sassy Grid](https://github.com/seveti/sassy-grid)
 </p>
 
 ## Quick start
