@@ -65,9 +65,11 @@
         @include desktop-up {
             @include grid-start(1);
         }
+
         @include tablet-only {
             @include grid-start(1);
         }
+
         @include mobile-only {
             @include grid-start(1);
             @include justify(center);
@@ -86,10 +88,12 @@
         @include desktop-up {
             @include grid-start(1, 2);
         }
+
         @include tablet-up {
             @include grid-start(1, 2);
             padding: $size-6;
         }
+
         @include mobile-only {
             @include grid-start(1, 2);
             @include justify(center);
@@ -109,6 +113,7 @@
             @include tablet-only {
                 max-width: 200px;
             }
+            
             @include mobile-only {
                 padding: .5em;
                 max-width: 230px;
@@ -119,7 +124,7 @@
     }
 
     .button {
-        margin-top: .5rem;
+        margin-top: .25rem;
 
         @include mobile-only {
             margin: 0;
@@ -152,25 +157,30 @@
             background-image: url('http://via.placeholder.com/500x500/ffffff/cccccc');
         }
 
-        .top {
-            > *:nth-child(2) {
-                padding: 0 0 $size-6;
-                line-height: 1.1;
-
-                @include desktop-up {
-                    max-width: 80%;
-                    font-size: 20px;
-                }
-        
-                @include tablet-down {
-                    font-size: 16px;
-                }
-            }
-        }
-
         h1 {
             @include desktop-up {
                 font-size: 40px;
+            }
+        }
+
+        .body {
+            line-height: 1.25;
+
+            @include desktop-up {
+                max-width: 80%;
+                font-size: 20px;
+            }
+    
+            @include tablet-down {
+                font-size: 16px;
+            }
+        }
+
+        .button {
+            margin-top: .75rem;
+
+            @include mobile-only {
+                margin: .5rem;
             }
         }
     }
@@ -189,25 +199,6 @@
             height: 500px;
             background-image: url('http://via.placeholder.com/500x500/ffffff/cccccc');
         }
-
-        .top {
-            @include tablet-only {
-                padding-left: 2em;
-                padding-top: 3em;
-            }
-        }
-
-        .bottom {
-            @include tablet-only {
-                padding-left: 2em;
-            }
-        }
-
-        .button {
-            @include desktop-up {
-                margin: 0;
-            }
-        }
     }
 
     > *:nth-child(3) {
@@ -223,34 +214,6 @@
         @include mobile-only {
             height: 500px;
             background-image: url('http://via.placeholder.com/500x500/ffffff/cccccc');
-        }
-
-        .top {
-            @include tablet-only {
-                padding-left: 2em;
-                padding-top: 3em;
-            }
-        }
-
-        .bottom {
-            @include tablet-only {
-                padding-left: 2em;
-            }
-        }
-        
-        .subtitle {
-            @include desktop-up {
-                max-width: 110px;
-            }
-            @include tablet-only {
-                max-width: 165px;
-            }
-        }
-
-        .button {
-            @include desktop-up {
-                margin: 0;
-            }
         }
     }
 }

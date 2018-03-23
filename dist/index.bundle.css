@@ -641,7 +641,7 @@ h4 {
         text-align: center; } }
 
 .three-block-hero .button {
-  margin-top: .5rem; }
+  margin-top: .25rem; }
   @media only screen and (max-width: 540px) {
     .three-block-hero .button {
       margin: 0; } }
@@ -665,21 +665,26 @@ h4 {
     height: 500px;
     background-image: url("http://via.placeholder.com/500x500/ffffff/cccccc"); } }
 
-.three-block-hero--custom > *:nth-child(1) .top > *:nth-child(2) {
-  padding: 0 0 1rem;
-  line-height: 1.1; }
-  @media only screen and (min-width: 850px) {
-    .three-block-hero--custom > *:nth-child(1) .top > *:nth-child(2) {
-      max-width: 80%;
-      font-size: 20px; } }
-  @media only screen and (max-width: 850px) {
-    .three-block-hero--custom > *:nth-child(1) .top > *:nth-child(2) {
-      font-size: 16px; } }
-
 @media only screen and (min-width: 850px) {
   .three-block-hero--custom > *:nth-child(1) h1 {
     font-size: 40px; } }
 
+.three-block-hero--custom > *:nth-child(1) .body {
+  line-height: 1.25; }
+  @media only screen and (min-width: 850px) {
+    .three-block-hero--custom > *:nth-child(1) .body {
+      max-width: 80%;
+      font-size: 20px; } }
+  @media only screen and (max-width: 850px) {
+    .three-block-hero--custom > *:nth-child(1) .body {
+      font-size: 16px; } }
+
+.three-block-hero--custom > *:nth-child(1) .button {
+  margin-top: .75rem; }
+  @media only screen and (max-width: 540px) {
+    .three-block-hero--custom > *:nth-child(1) .button {
+      margin: .5rem; } }
+
 @media only screen and (min-width: 850px) {
   .three-block-hero--custom > *:nth-child(2) {
     height: 325px;
@@ -694,19 +699,6 @@ h4 {
     height: 500px;
     background-image: url("http://via.placeholder.com/500x500/ffffff/cccccc"); } }
 
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .three-block-hero--custom > *:nth-child(2) .top {
-    padding-left: 2em;
-    padding-top: 3em; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .three-block-hero--custom > *:nth-child(2) .bottom {
-    padding-left: 2em; } }
-
-@media only screen and (min-width: 850px) {
-  .three-block-hero--custom > *:nth-child(2) .button {
-    margin: 0; } }
-
 @media only screen and (min-width: 850px) {
   .three-block-hero--custom > *:nth-child(3) {
     height: 325px;
@@ -720,27 +712,6 @@ h4 {
   .three-block-hero--custom > *:nth-child(3) {
     height: 500px;
     background-image: url("http://via.placeholder.com/500x500/ffffff/cccccc"); } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .three-block-hero--custom > *:nth-child(3) .top {
-    padding-left: 2em;
-    padding-top: 3em; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .three-block-hero--custom > *:nth-child(3) .bottom {
-    padding-left: 2em; } }
-
-@media only screen and (min-width: 850px) {
-  .three-block-hero--custom > *:nth-child(3) .subtitle {
-    max-width: 110px; } }
-
-@media only screen and (min-width: 540px) and (max-width: 850px) {
-  .three-block-hero--custom > *:nth-child(3) .subtitle {
-    max-width: 165px; } }
-
-@media only screen and (min-width: 850px) {
-  .three-block-hero--custom > *:nth-child(3) .button {
-    margin: 0; } }
 
 /* State */
 /* Theme */
