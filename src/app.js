@@ -1,3 +1,3 @@
-import styles from './main';
+import styles from './styles/main';
 
 require('./js/script');
