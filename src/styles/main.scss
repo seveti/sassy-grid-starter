@@ -1,11 +1,10 @@
 /* Base */
 @import "./base/reset";
-@import "./base/responsive";
-@import "./base/grid";
+@import "./base/mixins/responsive";
+@import "./base/mixins/grid";
 @import "./base/base";
 @import "./base/helper";
 
-/* Base > Element */
 @import "./base/element/typography";
 @import "./base/element/link";
 @import "./base/element/button";
