@@ -1,11 +1,6 @@
 /* Block */
 .block {
     @include grid;
-    padding: 0 0 $size-6;
-
-    > * {
-        padding: 0 0 $size-8;
-    }
 }
 
 
@@ -14,6 +9,15 @@
 // Large block
 .block--large {
     padding: 0 0 $size-2;
+}
+
+// Title block
+.block--title {
+    padding: 0 0 $size-6;
+
+    > * {
+        padding: 0 0 $size-8;
+    }
 }
 
 // Title Graphic block
