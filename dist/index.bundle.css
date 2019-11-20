@@ -222,7 +222,6 @@ sup {
 .padding-bottom--xlarge {
   padding-bottom: 2.5rem; }
 
-/* Base > Element */
 /* Body */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -605,7 +604,6 @@ h4 {
     margin-bottom: .5rem; }
 
 .three-block-hero .bottom {
-  width: 100%;
   align-self: end; }
   @media only screen and (min-width: 850px) {
     .three-block-hero .bottom {
@@ -621,10 +619,9 @@ h4 {
       grid-column-start: 1;
       grid-row-start: 2;
       justify-self: center;
-      text-align: center;
-      background-color: #6b6b6b;
-      color: #ffffff; } }
+      text-align: center; } }
   .three-block-hero .bottom > *:nth-child(1) {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.2; }
     @media only screen and (min-width: 850px) {

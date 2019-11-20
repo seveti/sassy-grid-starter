@@ -82,7 +82,6 @@
     }
     
     .bottom {
-        width: 100%;
         @include align(end);
 
         @include desktop-up {
@@ -98,11 +97,10 @@
             @include grid-start(1, 2);
             @include justify(center);
             text-align: center;
-            background-color: $color-grey;
-            color: $color-white;
         }
 
         > *:nth-child(1) {
+            display: inline-block;
             font-size: 14px;
             line-height: 1.2;
 
