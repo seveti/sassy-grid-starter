@@ -27,3 +27,7 @@ Thumbs.db
 /assets
 assets
 assets/
+
+dist/index.bundle.css
+dist/index.bundle.css.map
+dist/index.bundle.js
