@@ -1,15 +1,17 @@
+$three-column-gap: map-get($sizes, 4);
+
 /* Three column with gap */
 .three-column {
     @include desktop-up {
-        @include grid(1fr map-get($sizes, 4) 1fr map-get($sizes, 4) 1fr);
+        @include grid(1fr $three-column-gap 1fr $three-column-gap 1fr);
     }
 
     @include tablet-only {
-        @include grid(1fr map-get($sizes, 4) 1fr, auto map-get($sizes, 4) auto);
+        @include grid(1fr $three-column-gap 1fr, auto $three-column-gap auto);
     }
 
     @include mobile-only {
-        @include grid(1fr, auto map-get($sizes, 4) auto map-get($sizes, 4) auto);
+        @include grid(1fr, auto $three-column-gap auto $three-column-gap auto);
     }
 
     > *:nth-child(1) {
