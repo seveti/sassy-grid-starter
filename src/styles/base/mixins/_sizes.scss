@@ -4,7 +4,6 @@
 * Usage:
     padding-top: map-get($sizes, 4)
 */
-$sizes: ();
 
 /* Count */
 $sizes-count: 10;
@@ -13,14 +12,17 @@ $sizes-count: 10;
 $sizes-multiplier: 4;
 
 /*
-* Setting values (based on Count and Multiplier)
+* Setting Sizes (based on Count and Multiplier)
 *
+* Output:
     $sizes: (
         1: 4px
         2: 8px
         3: 12px, etc.
     );
 */
+$sizes: ();
+
 @for $i from 1 through $sizes-count {
     $sizes: map-merge($sizes, ($i: #{$i * $sizes-multiplier}px));
 }

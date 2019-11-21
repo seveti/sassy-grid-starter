@@ -4,7 +4,6 @@
 * Usage:
     map-get($weights, "medium")
 */
-$weights: ();
 
 /* Weight values */
 $weights-light: 300;
@@ -13,11 +12,13 @@ $weights-medium: 500;
 $weights-semibold: 600;
 $weights-bold: 700;
 
-/* Setting values */
-$weights: map-merge($weights, (
+/*
+* Setting Weights
+*/
+$weights: (
     "light": $weights-light,
     "normal": $weights-normal,
     "medium": $weights-medium,
     "semibold": $weights-semibold,
-    "bold": $weights-bold,
-));
+    "bold": $weights-bold
+);
