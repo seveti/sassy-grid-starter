@@ -3,15 +3,15 @@
     @include grid;
 
     @include desktop-up {
-        padding: 3rem $size-6;
+        padding: $size-10 $size-3;
     }
 
     @include tablet-only {
-        padding: 2rem $size-4;
+        padding: $size-9 $size-5;
     }
 
     @include mobile-only {
-        padding: 2rem $size-6;
+        padding: $size-9 $size-3;
     }
 }
 

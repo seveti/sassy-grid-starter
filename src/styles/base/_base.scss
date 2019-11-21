@@ -25,16 +25,16 @@ $font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
 $font-size-normal: '16px';
 
 /* Sizes */
-$size-1: 3rem;
-$size-2: 2.5rem;
-$size-3: 2rem;
-$size-4: 1.5rem;
-$size-5: 1.25rem;
-$size-6: 1rem;
-$size-7: 0.75rem;
-$size-8: 0.5rem;
-$size-9: 0.2rem;
-$size-10: 0.25rem;
+$size-1: 4px;
+$size-2: 8px;
+$size-3: 12px;
+$size-4: 16px;
+$size-5: 20px;
+$size-6: 24px;
+$size-7: 28px;
+$size-8: 32px;
+$size-9: 36px;
+$size-10: 40px;
 
 /* Weights */
 $weight-light: 300;
@@ -44,7 +44,6 @@ $weight-semibold: 600;
 $weight-bold: 700;
 
 /* Breakpoints */
-$breakpoint-mobile: 540px;
-$breakpoint-tablet: 850px;
-$breakpoint-desktop: 1024px;
-$breakpoint-widescreen: 1170px;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1216px;

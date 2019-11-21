@@ -42,7 +42,7 @@
 }
 
 /* Hide on desktop */
-.desktop-hide {
+.hide-desktop {
     @include tablet-up {
         display: none;
     }
@@ -53,7 +53,7 @@
 }
 
 /* Hide on mobile */
-.mobile-hide {
+.hide-mobile {
     @include tablet-up {
         display: block;
     }
