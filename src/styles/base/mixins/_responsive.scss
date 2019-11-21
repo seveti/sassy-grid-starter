@@ -18,3 +18,27 @@
 @mixin desktop-only { @media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) { @content; } }
 
 @mixin widescreen-only { @media only screen and (min-width: $breakpoint-desktop + 1) { @content; } }
+
+/*
+* Responsive property mixin
+* Includes desktop, tablet, and mobile views
+*/
+@mixin responsive($property, $mobile, $tablet, $desktop) {
+    @if $mobile {
+        @include mobile-only {
+            $property: $mobile;
+        }
+    }
+
+    @if $tablet {
+        @include tablet-only {
+            $property: $tablet;
+        }
+    }
+
+    @if $desktop {
+        @include desktop-up {
+            $property: $desktop;
+        }
+    }
+}

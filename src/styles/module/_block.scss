@@ -8,25 +8,25 @@
 
 // Large block
 .block--large {
-    padding: 0 0 $size-2;
+    padding: 0 0 map-get($sizes, 2);
 }
 
 // Title block
 .block--title {
-    padding: 0 0 $size-8;
+    padding: 0 0 map-get($sizes, 8);
 
     > * {
-        padding: 0 0 $size-2;
+        padding: 0 0 map-get($sizes, 2);
     }
 }
 
 // Title Graphic block
 .block--title-graphic {
-    padding: 0 0 $size-8;
+    padding: 0 0 map-get($sizes, 8);
     text-align: center;
 
     > *:nth-child(1) {
-        padding: 0 0 $size-4;
+        padding: 0 0 map-get($sizes, 4);
     }
 
     p {

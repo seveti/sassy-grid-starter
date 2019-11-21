@@ -1,18 +1,18 @@
 /* Button placeholder selector */
 %button-static {
-  @include border-radius(20px);
-  padding: 10px 20px;
+  @include border-radius(map-get($sizes, 5));
   display: inline-block;
-  line-height: 1;
-  text-transform: uppercase;
-  text-decoration: none;
   font-family: $font-family-primary;
   font-size: $font-size-normal;
   font-weight: $weight-normal;
+  line-height: normal;
+  padding: map-get($sizes, "small") map-get($sizes, "medium");
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
-    color: $color-white;
     background-color: $color-turquoise;
+    color: $color-white;
   }
 }
 
@@ -21,8 +21,9 @@
   @extend %button-static;
 }
 
-
-/* Modifiers */
+/*
+* Modifiers
+*/
 
 // Primary button
 .button--primary {

@@ -1,15 +1,15 @@
 /* Two column with gap */
 .two-column {
     @include desktop-up {
-        @include grid(1fr $size-4 1fr);
+        @include grid(1fr map-get($sizes, 4) 1fr);
     }
 
     @include tablet-only {
-        @include grid(1fr $size-4 1fr);
+        @include grid(1fr map-get($sizes, 4) 1fr);
     }
 
     @include mobile-only {
-        @include grid(1fr, auto $size-4 auto);
+        @include grid(1fr, auto map-get($sizes, 4) auto);
     }
 
     > *:nth-child(1) {

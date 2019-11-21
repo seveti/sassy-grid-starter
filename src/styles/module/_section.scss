@@ -3,16 +3,22 @@
     @include grid;
 
     @include desktop-up {
-        padding: $size-10 $size-3;
+        padding: map-get($sizes, 10) map-get($sizes, 3);
     }
 
     @include tablet-only {
-        padding: $size-9 $size-5;
+        padding: map-get($sizes, 9) map-get($sizes, 5);
     }
 
     @include mobile-only {
-        padding: $size-9 $size-3;
+        padding: map-get($sizes, 9) map-get($sizes, 3);
     }
+
+    // @include responsive("padding",
+    //     map-get($sizes, 9) map-get($sizes, 3),
+    //     map-get($sizes, 9) map-get($sizes, 5),
+    //     map-get($sizes, 10) map-get($sizes, 3),
+    // );
 }
 
 

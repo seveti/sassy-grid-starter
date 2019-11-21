@@ -1,16 +1,16 @@
 /* Three Block Hero */
 .three-block-hero {
     @include desktop-up {
-        @include grid(2fr $size-4 1fr, auto $size-4 auto);
-        padding: $size-3 0 $size-2;
+        @include grid(2fr map-get($sizes, 4) 1fr, auto map-get($sizes, 4) auto);
+        padding: map-get($sizes, 3) 0 map-get($sizes, 2);
     }
 
     @include tablet-only {
-        @include grid(1fr, repeat(3, 375px $size-4));
+        @include grid(1fr, repeat(3, 375px map-get($sizes, 4)));
     }
     
     @include mobile-only {
-        @include grid(1fr, repeat(3, auto $size-4));  
+        @include grid(1fr, repeat(3, auto map-get($sizes, 4)));  
         min-width: 320px;
     }
 
@@ -59,7 +59,7 @@
     }
 
     .top {
-        padding: $size-3;
+        padding: map-get($sizes, 3);
         align-self: start;
 
         @include desktop-up {
@@ -77,13 +77,13 @@
         }
 
         > *:nth-child(1) {
-            padding-bottom: $size-3;
+            padding-bottom: map-get($sizes, 3);
         }
     }
     
     .bottom {
         @include align(end);
-        padding: $size-3;
+        padding: map-get($sizes, 3);
 
         @include tablet-up {
             @include grid-start(1, 2);
@@ -147,7 +147,7 @@
         }
 
         .body {
-            padding-bottom: $size-3;
+            padding-bottom: map-get($sizes, 3);
             line-height: 1.25;
 
             @include desktop-up {

@@ -18,7 +18,7 @@
 
 .link--full {
     font-size: 20px;
-    padding: $size-6 0;
+    padding: map-get($sizes, 6) 0;
     display: block;
     width: 100%;
     text-align: center;

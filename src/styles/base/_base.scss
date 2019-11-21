@@ -22,19 +22,7 @@ $color-h4: $color-grey-dark;
 /* Type */
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,80');
 $font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
-$font-size-normal: '16px';
-
-/* Sizes */
-$size-1: 4px;
-$size-2: 8px;
-$size-3: 12px;
-$size-4: 16px;
-$size-5: 20px;
-$size-6: 24px;
-$size-7: 28px;
-$size-8: 32px;
-$size-9: 36px;
-$size-10: 40px;
+$font-size-normal: map-get($sizes, 4);
 
 /* Weights */
 $weight-light: 300;
@@ -46,4 +34,4 @@ $weight-bold: 700;
 /* Breakpoints */
 $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1024px;
-$breakpoint-desktop: 1216px;
+$breakpoint-desktop: 1366px;
