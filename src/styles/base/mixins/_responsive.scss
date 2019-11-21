@@ -21,24 +21,29 @@
 
 /*
 * Responsive property mixin
-* Includes desktop, tablet, and mobile views
+* Includes mobile, tablet, and desktop up views (null is valid)
+    @include responsive(padding,
+        map-get($sizes, 9) map-get($sizes, 3),
+        map-get($sizes, 9) map-get($sizes, 5),
+        map-get($sizes, 10) map-get($sizes, 3),
+    );
 */
-@mixin responsive($property, $mobile, $tablet, $desktop) {
+@mixin responsive($property, $mobile: null, $tablet: null, $desktop: null) {
     @if $mobile {
         @include mobile-only {
-            $property: $mobile;
+            #{$property}: #{$mobile};
         }
     }
 
     @if $tablet {
         @include tablet-only {
-            $property: $tablet;
+            #{$property}: #{$tablet};
         }
     }
 
     @if $desktop {
         @include desktop-up {
-            $property: $desktop;
+            #{$property}: #{$desktop};
         }
     }
 }

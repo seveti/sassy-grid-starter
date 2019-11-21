@@ -13,12 +13,6 @@
     @include mobile-only {
         padding: map-get($sizes, 9) map-get($sizes, 3);
     }
-
-    // @include responsive("padding",
-    //     map-get($sizes, 9) map-get($sizes, 3),
-    //     map-get($sizes, 9) map-get($sizes, 5),
-    //     map-get($sizes, 10) map-get($sizes, 3),
-    // );
 }
 
 

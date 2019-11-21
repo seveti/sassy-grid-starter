@@ -2,49 +2,19 @@
 * Sizes helper mixin
 *
 * Number size usage:
-*   map-get($sizes, 4)
-*   class="padding--8"
-* 
-* Name size usage:
-*   map-get($sizes, "small")
-*   class="padding--large"
+    padding-top: map-get($sizes, 4)
 */
 $sizes: ();
 
-/* Sizes multiplier */
+/* Sizes multiplier (based on 4 to 1 design pattern) */
 $sizes-multiplier: 4;
 
-/* Number sizes count */
+/* Sizes count */
 $sizes-count: 10;
-
-/* Number size values (based on count) */
-$sizes-small: 3;
-$sizes-medium: 5;
-$sizes-large: 8;
 
 /*
 * Number sizes
 */
 @for $i from 1 through $sizes-count {
     $sizes: map-merge($sizes, ($i: #{$i * $sizes-multiplier}px));
-
-    .padding--#{$i} {
-        padding: map-get($sizes, $i);
-    }
-}
-
-/*
-* Name sizes
-*/
-$sizes: map-merge($sizes, (
-    "small": map-get($sizes, $sizes-small),
-    "medium": map-get($sizes, $sizes-medium),
-    "large": map-get($sizes, $sizes-large),
-));
-
-@each $size, $value in $sizes {
-
-    .padding--#{$size} {
-        padding: map-get($sizes, ($size: $value));
-    }
 }
