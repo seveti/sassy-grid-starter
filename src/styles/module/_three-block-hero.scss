@@ -2,8 +2,7 @@
 .three-block-hero {
     @include desktop-up {
         @include grid(2fr $size-4 1fr, auto $size-4 auto);
-        padding: $size-3 0 0;
-        margin-bottom: $size-2;
+        padding: $size-3 0 $size-2;
     }
 
     @include tablet-only {
