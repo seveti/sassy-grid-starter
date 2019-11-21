@@ -1,3 +1,10 @@
+/*
+* Breakpoint values
+*/
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1366px;
+
 /* Desktop, Tablet, and Mobile */
 @mixin desktop-down { @media only screen and (max-width: $breakpoint-desktop) { @content; } }
 
@@ -10,18 +17,23 @@
 /* Tablet, Desktop, and Widescreen */
 @mixin tablet-up { @media only screen and (min-width: $breakpoint-mobile + 1) { @content; } }
 
-/* Responsive Only Views */
+/* Mobile only */
 @mixin mobile-only { @media only screen and (max-width: $breakpoint-mobile) { @content; } }
 
+/* Tablet only */
 @mixin tablet-only { @media only screen and (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) { @content; } }
 
+/* Desktop only */
 @mixin desktop-only { @media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) { @content; } }
 
+/* Widescreen only */
 @mixin widescreen-only { @media only screen and (min-width: $breakpoint-desktop + 1) { @content; } }
 
 /*
 * Responsive property mixin
-* Includes mobile, tablet, and desktop up views (null is valid)
+* Assign mobile, tablet, and desktop up values to same property value (null is valid)
+*
+* Usage:
     @include responsive(padding,
         map-get($sizes, 9) map-get($sizes, 3),
         map-get($sizes, 9) map-get($sizes, 5),

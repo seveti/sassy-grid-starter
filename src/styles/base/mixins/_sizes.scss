@@ -1,19 +1,25 @@
 /*
 * Sizes helper mixin
 *
-* Number size usage:
+* Usage:
     padding-top: map-get($sizes, 4)
 */
 $sizes: ();
 
-/* Sizes multiplier (based on 4 to 1 design pattern) */
-$sizes-multiplier: 4;
-
-/* Sizes count */
+/* Count */
 $sizes-count: 10;
 
+/* Multiplier (based on 4 to 1 design pattern) */
+$sizes-multiplier: 4;
+
 /*
-* Number sizes
+* Setting values (based on Count and Multiplier)
+*
+    $sizes: (
+        1: 4px
+        2: 8px
+        3: 12px, etc.
+    );
 */
 @for $i from 1 through $sizes-count {
     $sizes: map-merge($sizes, ($i: #{$i * $sizes-multiplier}px));
