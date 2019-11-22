@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
@@ -15,28 +15,28 @@ module.exports = {
       publicPath: "/dist/",
       filename: '[name].bundle.js'
     },
+    mode: 'development',
     module: {
       rules: [  
         { // sass / scss loader for webpack
           test: /\.scss$/,
-          use: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                    url: true,
-                    sourceMap: true
-                }
-              }, 
-              {
-                loader: 'sass-loader',
-                options: {
-                    sourceMap: true
-                }
+          use: [
+            'style-loader',
+            ExtractTextPlugin.loader,
+            {
+              loader: "css-loader",
+              options: {
+                  url: true,
+                  sourceMap: true
               }
-            ]
-          })
+            }, 
+            {
+              loader: 'sass-loader',
+              options: {
+                  sourceMap: true
+              }
+            }
+          ]
         }
       ]
     },
@@ -48,7 +48,7 @@ module.exports = {
       }),
       new ExtractTextPlugin({ // define where to save the file
         filename: '[name].bundle.css',
-        allChunks: true,
+        chunkFilename: '[name].bundle.css',
       }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i
