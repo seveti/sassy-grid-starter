@@ -2,6 +2,7 @@
 %button-static {
   @include border-radius(map-get($sizes, 5));
   display: inline-block;
+  max-width: fit-content;
   font-family: $font-family-primary;
   font-size: $font-size-normal;
   font-weight: map-get($weights, "normal");

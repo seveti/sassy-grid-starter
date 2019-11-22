@@ -1,10 +1,6 @@
 /* Base */
 @import "./base/reset";
-@import "./base/mixins/responsive";
-@import "./base/mixins/grid";
-@import "./base/mixins/sizes";
-@import "./base/mixins/weights";
-@import "./base/mixins/utility";
+@import "./base/mixins/mixins";
 @import "./base/base";
 @import "./base/helper";
 

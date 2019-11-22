@@ -59,8 +59,9 @@
     }
 
     .top {
+        @include grid;
+        @include align(start);
         padding: map-get($sizes, 3);
-        align-self: start;
 
         @include desktop-up {
             @include grid-start(1);
