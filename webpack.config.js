@@ -42,10 +42,6 @@ module.exports = {
               }
             }
           ]
-        },
-        {
-          test: /\.css$/,
-          use: [ExtractTextPlugin.loader, 'css-loader'],
         }
       ]
     },
@@ -59,9 +55,11 @@ module.exports = {
         filename: '[name].bundle.css',
         chunkFilename: '[name].bundle.css',
       }),
-      new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.bundle\.css$/g
-      }),
+      // Optimize css bundle
+      //
+      // new OptimizeCssAssetsPlugin({
+      //   assetNameRegExp: /\.bundle\.css$/g
+      // }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i
       })
