@@ -24,7 +24,7 @@
     "postcss-loader": "^2.1.2",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.2"
+    "webpack-dev-server": ">=3.1.11"
   },
   "dependencies": {
     "css-loader": "^0.28.11",
