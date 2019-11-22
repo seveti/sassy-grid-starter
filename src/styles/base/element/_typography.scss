@@ -1,7 +1,11 @@
+/* Type */
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,80');
+$font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
+
 /* Body */
 body {
   font-family: $font-family-primary;
-  font-size: $font-size-normal;
+  font-size: map-get($sizes, 4);
   font-weight: map-get($weights, "normal");
 }
 
@@ -25,73 +29,49 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: map-get($weights, "bold");
-  color: $color-h1;
+  color: $color-grey-dark;
   text-transform: uppercase;
 
-  @include desktop-up {
-    font-size: 30px;
-  }
-
-  @include tablet-only {
-    font-size: 26px;
-  }
-  
-  @include mobile-only {
-    font-size: 20px;
-  }
+  @include responsive(font-size,
+    20px,
+    26px,
+    30px
+  );
 }
 
 h2 {
   font-weight: map-get($weights, "bold");
-  color: $color-h2;
+  color: $color-turquoise;
   text-transform: uppercase;
 
-  @include desktop-up {
-    font-size: 26px;
-  }
-
-  @include tablet-only {
-    font-size: 26px;
-  }
-  
-  @include mobile-only {
-    font-size: 20px;
-  }
+  @include responsive(font-size,
+    20px,
+    26px,
+    26px
+  );
 }
 
 h3 {
   font-weight: map-get($weights, "semibold");
-  color: $color-h3;
+  color: $color-grey-dark;
   text-transform: uppercase;
 
-  @include desktop-up {
-    font-size: 20px;
-  }
-
-  @include tablet-only {
-    font-size: 20px;
-  }
-  
-  @include mobile-only {
-    font-size: 20px;
-  }
+  @include responsive(font-size,
+    20px,
+    20px,
+    20px
+  );
 }
 
 h4 {
   font-weight: map-get($weights, "semibold");
-  color: $color-h4;
+  color: $color-grey-dark;
 
-  @include desktop-up {
-    font-size: 20px;
-  }
-
-  @include tablet-only {
-    font-size: 16px;
-  }
-  
-  @include mobile-only {
-    font-size: 16px;
-  }
+  @include responsive(font-size,
+    16px,
+    16px,
+    20px
+  );
 }
 
 h5 {

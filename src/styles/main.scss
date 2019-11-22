@@ -3,16 +3,14 @@
 @import "./base/mixins/grid";
 @import "./base/mixins/responsive";
 @import "./base/mixins/utility";
+@import "./base/colors";
 @import "./base/sizes";
 @import "./base/weights";
-@import "./base/base";
 @import "./base/helper";
 
 @import "./base/element/typography";
 @import "./base/element/link";
 @import "./base/element/button";
-@import "./base/element/arrow";
-@import "./base/element/play-button";
 
 /* Layout */
 @import "./layout/header";
@@ -22,6 +20,8 @@
 /* Module */
 @import "./module/section";
 @import "./module/block";
+@import "./module/arrow";
+@import "./module/play-button";
 @import "./module/two-column";
 @import "./module/three-column";
 @import "./module/three-block-hero";

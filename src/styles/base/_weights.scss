@@ -5,20 +5,10 @@
     map-get($weights, "medium")
 */
 
-/* Weight values */
-$weights-light: 300;
-$weights-normal: 400;
-$weights-medium: 500;
-$weights-semibold: 600;
-$weights-bold: 700;
-
-/*
-* Setting Weights
-*/
 $weights: (
-    "light": $weights-light,
-    "normal": $weights-normal,
-    "medium": $weights-medium,
-    "semibold": $weights-semibold,
-    "bold": $weights-bold
+    "light": 300,
+    "normal": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700
 );
