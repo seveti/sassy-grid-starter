@@ -3,12 +3,17 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
     devtool: 'source-map',
     entry: {
       index: './app.js'
+    },
+    optimization: {
+      minimizer: [new TerserJSPlugin({}), new OptimizeCssAssetsPlugin({})],
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -37,6 +42,10 @@ module.exports = {
               }
             }
           ]
+        },
+        {
+          test: /\.css$/,
+          use: [ExtractTextPlugin.loader, 'css-loader'],
         }
       ]
     },
@@ -49,6 +58,9 @@ module.exports = {
       new ExtractTextPlugin({ // define where to save the file
         filename: '[name].bundle.css',
         chunkFilename: '[name].bundle.css',
+      }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.bundle\.css$/g
       }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i
