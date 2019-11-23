@@ -8,6 +8,7 @@
 * Install Node.js dependencies: `npm install`
 * Install the Grunt CLI: `npm install -g grunt-cli`
 * Run the app: `grunt`
+* Open `./dist/index.html`
 
 ## What's included
 ```

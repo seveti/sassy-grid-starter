@@ -55,11 +55,9 @@ module.exports = {
         filename: '[name].bundle.css',
         chunkFilename: '[name].bundle.css',
       }),
-      // Optimize css bundle
-      //
-      // new OptimizeCssAssetsPlugin({
-      //   assetNameRegExp: /\.bundle\.css$/g
-      // }),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.bundle\.css$/g
+      }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i
       })
