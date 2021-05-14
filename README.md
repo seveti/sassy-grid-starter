@@ -3,6 +3,12 @@
     An HTML5 starter for <a href="https://github.com/seveti/sassy-grid">Sassy Grid</a>
 </p>
 
+## Dependencies
+Node version: 12
+Npm version : 6
+Node sass: `npm rebuild node-sass`
+
+
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid-starter.git`
 * Install Node.js dependencies: `npm install`
@@ -10,8 +16,6 @@
 * Run the app: `grunt`
 * Open `./dist/index.html`
 
-Node version: 12
-Npm version : 6
 
 ## What's included
 ```
