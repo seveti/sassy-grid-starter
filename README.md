@@ -10,6 +10,9 @@
 * Run the app: `grunt`
 * Open `./dist/index.html`
 
+Node version: 12
+Npm version : 6
+
 ## What's included
 ```
 sassy-grid-starter/
